@@ -1,0 +1,79 @@
+PS C:\Users\Asus\Desktop\NewRepo\HomeWork> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        masterFile.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Asus\Desktop\NewRepo\HomeWork> git add .
+PS C:\Users\Asus\Desktop\NewRepo\HomeWork> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   masterFile.txt
+
+PS C:\Users\Asus\Desktop\NewRepo\HomeWork> git commit -m "text"
+[main f08e087] text
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 masterFile.txt
+PS C:\Users\Asus\Desktop\NewRepo\HomeWork> git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 273 bytes | 273.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Artsyom/HomeWork.git
+   bfa0ac6..f08e087  main -> main
+PS C:\Users\Asus\Desktop\NewRepo\HomeWork> git branch
+* main
+PS C:\Users\Asus\Desktop\NewRepo\HomeWork> git branch dev                                                               
+PS C:\Users\Asus\Desktop\NewRepo\HomeWork> git branch
+  dev
+* main
+PS C:\Users\Asus\Desktop\NewRepo\HomeWork> git checkout dev                                                             
+Switched to branch 'dev'
+PS C:\Users\Asus\Desktop\NewRepo\HomeWork> git status
+On branch dev
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        devFile.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Asus\Desktop\NewRepo\HomeWork> git add .
+PS C:\Users\Asus\Desktop\NewRepo\HomeWork> git commit -m "text"
+[dev 65edeaa] text
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 devFile.txt
+PS C:\Users\Asus\Desktop\NewRepo\HomeWork> git branch main
+fatal: A branch named 'main' already exists.
+PS C:\Users\Asus\Desktop\NewRepo\HomeWork> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\Asus\Desktop\NewRepo\HomeWork> git merge dev
+Updating f08e087..65edeaa
+Fast-forward
+ devFile.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 devFile.txt
+PS C:\Users\Asus\Desktop\NewRepo\HomeWork> git add .
+PS C:\Users\Asus\Desktop\NewRepo\HomeWork> git commit -m "text"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\Asus\Desktop\NewRepo\HomeWork> git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 273 bytes | 273.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Artsyom/HomeWork.git
+   f08e087..65edeaa  main -> main
+PS C:\Users\Asus\Desktop\NewRepo\HomeWork>
